@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    animation: flyIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffff;
+    color: black;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-box {
+    flex-basis: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: padding 0.5s;
+}
+
+.btn:hover {
+    padding: 13px 22px;
+    transition: padding 0.5s;
+}
+
+.developer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.developer-box {
+    flex-basis: 30%;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+.developer-info {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding-left: 20px; 
+}
+
+.developer-img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 10px;
+border: 2px solid black;
+margin-left: auto;
+margin-right: auto; 
+background-color: white;
+}
+
+@media (max-width: 900px) {
+    .info-box, .developer-box {
+        flex-basis: 100%; 
+    }
+}
+
+.glow {
+    text-shadow: 0 0 10px white;
+}
+
+@keyframes flyIn {
+from {
+transform: translateY(-100%);
+opacity: 0;
+}
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
