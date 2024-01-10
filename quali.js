@@ -4,15 +4,21 @@ function search() {
     resultsContainer.innerHTML = "";
   
     var keywords = {
-      "case study": "case",
-      "ethnography": "ethnography",
-      "historical study": "historical",
-      "phenomology": "phenomology",
-      "grounded theory": "grounded",
-      "quota sampling": "quota",
-      "voluntary sampling": "voluntary",
-      "purposive or judgemental sampling": "purposive",
-      "snowball sampling": "snowball",
+      "introduction": "introduction",
+      "conceptual framework": "conceptual-framework",
+      "statement of the problem": "statement-of-the-problem",
+      "significance of the study": "significance-of-the-study",
+      "scope and limitations": "scope-and-limitations",
+      "definition of terms": "definition-of-terms",
+      "citations": "citations",
+      "synthesis": "synthesis",
+      "research design": "research-design",
+      "sampling technique": "sampling",
+      "participants of the study":"participants",
+      "research instrument": "research-instrument",
+      "research procedure": "procedure",
+      "data analysis":"data",
+      "ethical consideration":"ethical"
   };
   
     if (input !== "") {
