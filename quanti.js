@@ -22,7 +22,10 @@ function search() {
       "consider the procedures that will be used to filter out unnecessary data": "consider-procedures",
       "specify the quantitative software data analysis tools that will be used": "specify-software-tools",
       "to describe, analyze, and summarize data, conduct a variety of analyses which are information broken down into smaller pieces": "conduct-variety-of-analyses",
-      "discuss the various types of tables that will be used to convey statistical reports.": "discuss-types-of-tables"
+      "discuss the various types of tables that will be used to convey statistical reports.": "discuss-types-of-tables",
+      "summary of finding":"summary",
+      "conclusion":"conclusion",
+      "recommendations":"recommendations"
   };
   
     if (input !== "") {
@@ -51,12 +54,9 @@ function search() {
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    // Get elements to animate
     var animateElements = document.querySelectorAll('h1, h2, h3, p');
 
-    // Add classes to trigger the fade-in animation
     animateElements.forEach(function (element) {
         element.classList.add('animation-complete');
     });
-});
-  
+}); 
